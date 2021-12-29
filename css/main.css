@@ -1,7 +1,7 @@
 
 @font-face{
   font-family: jetBrains;
-  src: url(fonts/JetBrainsMono-2.242/fonts/webfonts/JetBrainsMono-Regular.woff2)
+  src: url(../fonts/JetBrainsMono-2.242/fonts/webfonts/JetBrainsMono-Regular.woff2)
 }
 
 @keyframes fadeInAnimation {
@@ -29,6 +29,8 @@ a:visited {
   color:inherit;
   text-decoration: none;
 }
+
+
 .header {
   color:rgb(250, 211, 55)
 }
@@ -109,7 +111,7 @@ img {
   border: 4px solid black;
   margin: auto;
   height: auto;
-  max-width: 250px;
+  max-width: 275px;
 
 
 }
@@ -129,8 +131,8 @@ img {
   width: 30vw;
   height:15vh;
   display: flex;
-  margin: auto;
-  align-items: center; 
+  /* margin: auto; */
+  align-items: center;  
   text-align: justify;
   border: 4px solid black;
   margin-bottom: 4vh;
@@ -139,7 +141,13 @@ img {
 .textbox p {
   padding: 2vw;
   text-align: justify;
-  font-size: 1.2em;
+  font-size: 100%;
+}
+.textbox ul{
+  text-align: left;
+}
+.textbox a {
+  color :blueviolet;
 }
 
 footer {
@@ -153,7 +161,6 @@ footer {
 }
 footer p {
   margin:auto;
-  font-size: 1.75vh;
   text-align: center;
   padding: 3vh 4vw 0vh;
   color: rgb(250, 211, 55);
