@@ -4,6 +4,14 @@
   src: url(fonts/JetBrainsMono-2.242/fonts/webfonts/JetBrainsMono-Regular.woff2)
 }
 
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
 body {
   height:100%;
   background-color: #6515b0;
@@ -11,10 +19,11 @@ body {
   margin:0;
   display:flex;
   flex-direction: column;
+ 
 }
 a {
   text-decoration: none;
-  color:white;
+  color: rgb(250, 211, 55);
 }
 a:visited {
   color:inherit;
@@ -76,13 +85,20 @@ a:visited {
   align-items: center;
   font-size: 5vmin;
   transition:0.5s;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
 
 main {
   flex: 1;
+  flex-direction:column; 
   box-sizing: border-box;
   margin: 4vh 6vw 10vh;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 
 
 }
@@ -92,7 +108,9 @@ img {
   align-items: center; 
   border: 4px solid black;
   margin: auto;
-  max-width: 50vw;
+  height: auto;
+  max-width: 250px;
+
 
 }
 
@@ -101,7 +119,7 @@ img {
 .half {
   display: inline-block;
   width:43vw;
-  height:40vh;
+  height:27.5vw;
   margin: 0;
 }
 
@@ -113,7 +131,9 @@ img {
   display: flex;
   margin: auto;
   align-items: center; 
+  text-align: justify;
   border: 4px solid black;
+  margin-bottom: 4vh;
   
 }
 .textbox p {
@@ -124,16 +144,17 @@ img {
 
 footer {
   width: 100%;
-  height: auto;
-  margin-top: auto;
-  /* position:fixed; */
+  margin: auto auto 0;
   right: 0;
   left: 0;
   bottom: 0;
-  height: 15vh;
+  min-height: 20vh;
   background-color: #320e54;
 }
 footer p {
-  margin-top:auto;
+  margin:auto;
+  font-size: 1.75vh;
+  text-align: center;
+  padding: 3vh 4vw 0vh;
   color: rgb(250, 211, 55);
 }
