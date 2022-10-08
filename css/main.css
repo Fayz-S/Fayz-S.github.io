@@ -29,6 +29,10 @@ a:visited {
   color:inherit;
   text-decoration: none;
 }
+a:hover{
+  text-decoration: underline;
+}
+
 
 
 .header {
@@ -141,7 +145,7 @@ img {
 .textbox p {
   padding: 2vw;
   text-align: justify;
-  font-size: 100%;
+  font-size: 1em;
 }
 .textbox ul{
   text-align: left;
